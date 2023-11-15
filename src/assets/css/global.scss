@@ -1,5 +1,146 @@
 @import "@vkontakte/vkui/dist/vkui.css", "variables.scss";
 
+body[scheme="bright_light"],
+[scheme="bright_light"],
+.vkuibright_light {
+  background-color: #0b0c10;
+  --header_background: #1f2833;
+  --background_content: #1f2833;
+  --background: #1f2833;
+  --accent: #66fcf1;
+  --accent_alternate: #66fcf1;
+  --button_outline_border: #66fcf1;
+  --button_outline_foreground: #66fcf1;
+  --button_primary_background: #66fcf1;
+  --button_secondary_background: #45a29e;
+  --header_text: #66fcf1;
+  --tabbar_active_icon: #66fcf1;
+  --text_primary: #c5c6c7;
+  --text_secondary: gray;
+  --tabbar_background: #1f2833;
+}
+
+body[scheme="space_gray"],
+[scheme="space_gray"],
+.vkuispace_gray {
+  background-color: #0b0c10;
+  --header_background: #1f2833;
+  --background_content: #1f2833;
+  --background: #1f2833;
+  --accent: #66fcf1;
+  --accent_alternate: #66fcf1;
+  --button_outline_border: #66fcf1;
+  --button_outline_foreground: #66fcf1;
+  --button_primary_background: #66fcf1;
+  --button_secondary_background: #45a29e;
+  --header_text: #66fcf1;
+  --tabbar_active_icon: #66fcf1;
+  --text_primary: #c5c6c7;
+  --text_secondary: gray;
+  --tabbar_background: #1f2833;
+}
+
+body[scheme="vkcom_light"],
+[scheme="vkcom_light"],
+.vkuivkcom_light {
+  background-color: #0b0c10;
+  --header_background: #1f2833;
+  --background_content: #1f2833;
+  --background: #1f2833;
+  --accent: #66fcf1;
+  --accent_alternate: #66fcf1;
+  --button_outline_border: #66fcf1;
+  --button_outline_foreground: #66fcf1;
+  --button_primary_background: #66fcf1;
+  --button_secondary_background: #45a29e;
+  --header_text: #66fcf1;
+  --tabbar_active_icon: #66fcf1;
+  --text_primary: #c5c6c7;
+  --text_secondary: gray;
+  --tabbar_background: #1f2833;
+}
+
+body[scheme="vkcom_dark"],
+[scheme="vkcom_dark"],
+.vkuivkcom_dark {
+  background-color: #0b0c10;
+  --header_background: #1f2833;
+  --background_content: #1f2833;
+  --background: #1f2833;
+  --accent: #66fcf1;
+  --accent_alternate: #66fcf1;
+  --button_outline_border: #66fcf1;
+  --button_outline_foreground: #66fcf1;
+  --button_primary_background: #66fcf1;
+  --button_secondary_background: #45a29e;
+  --header_text: #66fcf1;
+  --tabbar_active_icon: #66fcf1;
+  --text_primary: #c5c6c7;
+  --text_secondary: gray;
+  --tabbar_background: #1f2833;
+}
+
+.vkuiButton__in {
+  color: #c5c6c7;
+}
+
+.vkuiTabbar {
+  background: #1e2c3d;
+  border-color: #1e2c3d !important;
+  box-shadow: #1e2c3d;
+}
+
+.vkuiInput--sizeY-compact .vkuiInput__el {
+  color: #2a2a2a !important;
+}
+
+.vkuiInput__el {
+  color: #2a2a2a;
+}
+
+.vkuiSelect__container {
+  color: #2a2a2a;
+}
+
+.vkuiTextarea--sizeY-compact .vkuiTextarea__el {
+  color: #0b0c10;
+}
+
+.vkuiTextarea__el {
+  color: #0b0c10;
+}
+
+.vkuiFormField--default .vkuiFormField__border {
+  background-color: #c5c6c7 !important;
+  border-color: #c5c6c7 !important;
+}
+
+.vkuiFormField__after {
+  background: #c5c6c7;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.vkuiInput .vkuiFormField__border {
+  background: #c5c6c7;
+}
+
+.vkuiSelect .vkuiFormField__border {
+  background: #c5c6c7;
+}
+
+.vkuiChipsInputBase {
+  background: #c5c6c7;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.vkuiTextarea .vkuiFormField__border {
+  background: #c5c6c7;
+}
+
+body {
+  background: white;
+}
+
 body,
 .Header {
   user-select: none;
@@ -45,4 +186,187 @@ body[scheme="vkcom_dark"],
   .toast {
     margin-top: 30px;
   }
+}
+
+.btn_settings {
+  margin-bottom: 5px;
+}
+
+.podpis {
+  display: flex;
+  justify-content: center;
+  white-space: pre-wrap;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.div-center {
+  display: table;
+  margin: 0 auto;
+}
+
+.ProfileUserWeb {
+  display: flex;
+  margin: -7px -7px 0 -7px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+}
+
+.ProfileUserMobail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+}
+
+.NameUser {
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.SubheaderUser {
+  margin-bottom: 24px;
+  color: var(--text_secondary);
+}
+
+.TabbarItem--selected .vkuiIcon {
+  animation-name: boop;
+  animation-duration: 0.7s;
+}
+
+.Cell--disabled .vkuiIcon {
+  animation-name: boop;
+  animation-duration: 0.7s;
+}
+
+.vkuiPanelHeaderButton--vkcom {
+  animation-name: boop;
+  animation-duration: 0.7s;
+}
+
+@keyframes boop {
+  25% {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  50% {
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/*renderjson*/
+.renderjson a {
+  text-decoration: none;
+  user-select: text;
+}
+.renderjson .disclosure {
+  color: #41b3a3;
+  font-size: 150%;
+  user-select: text;
+}
+.renderjson .syntax {
+  color: grey;
+  user-select: text;
+}
+.renderjson .string {
+  color: #659dbd;
+  user-select: text;
+}
+.renderjson .number {
+  color: #cafafe;
+  user-select: text;
+}
+.renderjson .boolean {
+  color: #e27d60;
+  user-select: text;
+}
+.renderjson .key {
+  color: #379683;
+  user-select: text;
+}
+.renderjson .keyword {
+  color: lightgoldenrodyellow;
+  user-select: text;
+}
+.renderjson .object.syntax {
+  color: grey;
+  user-select: text;
+}
+.renderjson .array.syntax {
+  color: #97caef;
+  user-select: text;
+}
+
+.vkuiTabbarItem--android .vkuiTabbarItem__tappable {
+  width: calc(100% + 16px);
+  padding-bottom: 0px;
+  border-radius: 50%;
+}
+
+.fixPaddingPlaceholder {
+  margin-top: -25px;
+  margin-bottom: -30px;
+}
+
+.podpis {
+  display: flex;
+  justify-content: center;
+  white-space: pre-wrap;
+}
+
+.scroll {
+  width: available !important;
+  overflow-x: auto !important;
+  word-wrap: normal;
+}
+
+.span.string {
+  overflow-x: scroll !important;
+  width: auto !important;
+}
+
+.div#responseTokenAccessToken.scroll {
+  overflow-x: scroll !important;
+  width: auto !important;
+}
+
+.start {
+  justify-content: center;
+  font-size: 50px;
+}
+
+.btn_onboarding {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.btn_settings {
+  margin-bottom: 5px;
+}
+
+.vkuiGallery__layer {
+  cursor: default;
 }

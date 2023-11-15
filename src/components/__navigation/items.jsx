@@ -1,16 +1,26 @@
-import { Icon24HomeOutline, Icon24UserCircleOutline } from "@vkontakte/icons";
+import {
+  Icon28ArrowUpCircleOutline,
+  Icon28BookOutline,
+  Icon28SettingsOutline,
+} from "@vkontakte/icons";
 
 export default [
   {
-    id: "home",
-    title: "Главная",
-    description: "Описание раздела",
-    icon: <Icon24HomeOutline />,
+    id: "api",
+    title: "VK API",
+    description: "Тестирование API",
+    icon: <Icon28ArrowUpCircleOutline />,
   },
   {
-    id: "profile",
-    title: "Профиль",
-    description: "Описание раздела",
-    icon: <Icon24UserCircleOutline />,
+    id: "bridge",
+    title: "VK Bridge",
+    description: "Тестирование Bridge",
+    icon: <Icon28BookOutline />,
+  },
+  {
+    id: "settings",
+    title: "Настройки",
+    description: "Просто настройки",
+    icon: <Icon28SettingsOutline />,
   },
 ];

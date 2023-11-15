@@ -4,9 +4,12 @@ import { Epic, View, useRouterPopout } from "@kokateam/router-vkminiapps";
 import { PageConstructor } from "/src/components/__global";
 import { DesktopNavigation, MobileNavigation } from "./components/__navigation";
 
-import Home from "./components/home/base";
-import Profile from "./components/profile/base";
+import Home from "./components/api/base";
+import Profile from "./components/bridge/base";
 import MainStack from "./components/__modals/MainStack";
+import Settings from "./components/settings/base";
+import ApiPanel from "./components/api/base";
+import BridgePanel from "./components/bridge/base";
 
 const Navigation = ({ isDesktop }) => {
   const { popout } = useRouterPopout();
@@ -27,19 +30,21 @@ const Navigation = ({ isDesktop }) => {
         maxWidth={isDesktop ? "650px" : "100%"}
       >
         <Epic tabbar={!isDesktop ? <MobileNavigation /> : null}>
-          <View id="home">
-            <PageConstructor id={"home"} name={"Главная"}>
-              <Home />
-            </PageConstructor>
-
-            <PageConstructor id={"home2"} name={"Главная 2"}>
-              <Home />
+          <View id="api">
+            <PageConstructor id={"api-panel"} name={"VK API"}>
+              <ApiPanel />
             </PageConstructor>
           </View>
 
-          <View id="profile">
-            <PageConstructor id={"profile"} name={"Профиль"}>
-              <Profile />
+          <View id="bridge">
+            <PageConstructor id={"bridge-panel"} name={"VK Bridge"}>
+              <BridgePanel />
+            </PageConstructor>
+          </View>
+
+          <View id="settings">
+            <PageConstructor id={"settings-panel"} name={"Настройки"}>
+              <Settings />
             </PageConstructor>
           </View>
         </Epic>

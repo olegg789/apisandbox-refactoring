@@ -4,12 +4,12 @@ import { Panel, PanelHeader, SimpleCell, SplitCol } from "@vkontakte/vkui";
 import navigationItems from "/src/components/__navigation/items";
 
 const DesktopNavigation = () => {
-  const { view, toView } = useRouterView();
+  const [view, toView] = useRouterView();
 
   return (
     <SplitCol fixed width="240px" maxWidth="240px">
       <Panel nav="navigationDesktop">
-        <PanelHeader>Boilerplate</PanelHeader>
+        <PanelHeader>SandBox</PanelHeader>
 
         {navigationItems.map((el, key) => (
           <SimpleCell
